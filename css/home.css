@@ -1,0 +1,101 @@
+
+.hamgurguer{
+    cursor: pointer;
+    display: none;
+}
+.hamgurguer div{
+    width: 32px;
+    height: 2px;
+    background: white;
+    margin: 8px;
+}
+.logo-grifo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size: 1.6rem;
+    font-weight: 900;
+    text-align: center;
+    height: 80vh;
+    background-position: center;
+    background-image: url("./../img/ime.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    isolation: isolate;
+}
+.logo-grifo::after{
+    content:'';
+    position: absolute;
+    z-index: -1;
+    inset: 0;
+    background: white;
+    opacity: .7;
+}
+#logo{
+    width: 90%;
+    max-width: 480px;
+    height: 80%; /*não sei o que colocar aqui*/
+    max-height: 480px;
+    background-size: inherit;
+    background-image: url("./../img/grifo2.png");
+    background-position: center;
+    background-repeat: no-repeat;   
+}
+.content{
+    padding-top: 40px;
+    padding-bottom: 50px;
+    background-color: rgb(143, 11,11);
+    display: flex;
+    justify-content: space-around;
+    font-size: 1.6rem;
+    font-weight: 900;
+}
+.content div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
+}
+.generico{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border: solid black;
+    cursor: pointer;
+    height: 250px;
+    width: 300px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+p{
+    text-align: center;
+}
+.barra{
+    width: 300px;
+    height: 10px;
+    background-color: black;
+    border: solid black;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+@font-face {
+    font-family: Inter;
+    src: url("./../fonts/Inter-VariableFont_slnt\,wght.ttf");
+}
+@font-face {
+    font-family: Graduate;
+    src: url("./../fonts/Graduate-Regular.ttf");
+}
+
+@media(max-width:940px){
+    .content{
+        flex-direction: column;
+    }
+    .barra{
+        display: none;
+    }
+
+}

@@ -1,0 +1,76 @@
+.back1, .back2{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px;
+    height: auto;
+}
+.back1{
+    background-color: rgb(143, 11,11);
+}
+.texto1,.texto2{
+    font-size: 1.4rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+}
+.texto1{
+    color: white;
+}
+
+h1{
+    font-family: Graduate, Arial, Helvetica, sans-serif;
+    align-self: flex-start;
+    font-weight: 200;
+    font-size: 3.4rem;
+}
+.img1,.img2,.img3{
+    width: 300px;
+    height: 300px;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+}
+.img1{
+    background-image: url("./../img/subway.jpeg");
+}
+.img2{
+    background-image: url("./../img/vikings.png");
+}
+.img3{
+    background-image: url("./../img/tia.png");
+}
+.texto1, .texto2{
+    width: 100%;
+}
+#teste1 {
+    text-align: justify;
+    text-justify: inter-word;
+}
+#subt {
+    margin-bottom: 20px;
+}
+
+@font-face {
+    font-family: Inter;
+    src: url("./../fonts/Inter-VariableFont_slnt\,wght.ttf");
+}
+@font-face {
+    font-family: Graduate;
+    src: url("./../fonts/Graduate-Regular.ttf");
+}
+
+@media(max-width:750px){
+    .back1,.back2{
+        flex-direction: column;
+        height: auto;
+    }
+    .img1,.img2,.img3{
+        width: 95%;
+        height: 300px;
+    }
+    .texto1,.texto2{
+        padding: 10px;
+    }
+}
