@@ -20,6 +20,8 @@ function handleLoginForm(event) {
 
     document.getElementById("username-field").value = "";
     document.getElementById("password-field").value = "";
+    
+    location.href = "index.html";
 }
 
 const loginForm = document.getElementById("login-form");
