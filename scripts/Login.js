@@ -11,6 +11,7 @@ function handleLoginForm(event) {
             const typeUser = storedUsers[username].typeUser;
             let welcome = `Bem-vindo ${typeUser}`;
             alert(welcome);
+             location.href = "index.html";
         } else {
             alert("Usuário ou senha inválido!");
         }
@@ -21,7 +22,7 @@ function handleLoginForm(event) {
     document.getElementById("username-field").value = "";
     document.getElementById("password-field").value = "";
     
-    location.href = "index.html";
+   
 }
 
 const loginForm = document.getElementById("login-form");
